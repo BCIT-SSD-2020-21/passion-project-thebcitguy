@@ -11,10 +11,15 @@ dotenv.config();
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
+
 app.use('/posts', postRoutes);
 
-//mongoDB connection URL and setting port to listen
-//const CONNECTION_URL = 'mongodb+srv://admin:s65L9soOQC37VCH8@cluster0.hdsqs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+app.get('/', (req, res) => {
+    res.send('Hello to PhotoPegs API');
+})
+
+//mongoDB connection URL moved to .env and setting port to listen
+
 const PORT = process.env.PORT || 5000;
 
 //use mongoose to connect to database
