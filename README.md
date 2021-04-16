@@ -24,6 +24,8 @@ The name of the app is called __PhotoPegs__. PhotoPegs is a social media app tha
 
 Dependencies to install:
 
+Client:
+
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "axios": "^0.21.1",
@@ -36,3 +38,13 @@ Dependencies to install:
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "web-vitals": "^1.0.1"
+    
+Server:
+
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "nodemon": "^2.0.7"
+    
